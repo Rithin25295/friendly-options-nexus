@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,10 +7,12 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { Sparkle, FolderPlus, Lightbulb } from "lucide-react";
+import { Sparkle, FolderPlus, Lightbulb, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const ProjectDropdown = () => {
+  const [selectedOption, setSelectedOption] = useState("Create Project");
+
   const menuItems = [
     {
       icon: (
@@ -76,20 +78,28 @@ const ProjectDropdown = () => {
     },
   ];
 
+  const handleItemClick = (label: string) => {
+    setSelectedOption(label);
+  };
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
           className="bg-[#9b87f5] hover:bg-[#8b77e5] text-white font-medium px-4 py-2 rounded-lg transition-all duration-200 ease-in-out"
         >
-          Create Project
+          {selectedOption}
+          <ChevronDown className="ml-2 h-4 w-4" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-52 bg-white rounded-lg shadow-lg p-1">
         {menuItems.map((item, index) => (
           <DropdownMenuItem
             key={index}
-            onClick={item.onClick}
+            onClick={() => {
+              item.onClick();
+              handleItemClick(item.label);
+            }}
             className={cn(
               "flex items-center px-3 py-2.5 text-sm font-medium cursor-pointer rounded-md",
               "hover:bg-[#9b87f5]/20 hover:text-[#9b87f5] transition-colors duration-200",
