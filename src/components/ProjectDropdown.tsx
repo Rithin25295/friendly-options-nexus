@@ -13,7 +13,13 @@ import { cn } from "@/lib/utils";
 const ProjectDropdown = () => {
   const menuItems = [
     {
-      icon: <Sparkle className="mr-2 h-5 w-5" />,
+      icon: (
+        <div className="relative mr-2">
+          <Sparkle className="h-5 w-5" />
+          <span className="absolute -top-1 -right-1 h-1.5 w-1.5 bg-[#9b87f5] rounded-full" />
+          <span className="absolute -bottom-0.5 -left-1 h-1.5 w-1.5 bg-[#9b87f5] rounded-full" />
+        </div>
+      ),
       label: "Model with AI",
       onClick: () => console.log("Model with AI clicked"),
     },
