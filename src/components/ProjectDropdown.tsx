@@ -16,8 +16,8 @@ const ProjectDropdown = () => {
       icon: (
         <div className="relative mr-2">
           <Sparkle className="h-5 w-5 text-[#9b87f5]" />
-          <span className="absolute -top-1 -right-1 h-1.5 w-1.5 bg-[#9b87f5] rounded-full" />
-          <span className="absolute -bottom-0.5 -left-1 h-1.5 w-1.5 bg-[#9b87f5] rounded-full" />
+          <span className="absolute -top-0.5 -right-0.5 h-1 w-1 bg-[#9b87f5] rounded-full" />
+          <span className="absolute -bottom-0.5 -left-0.5 h-1 w-1 bg-[#9b87f5] rounded-full" />
         </div>
       ),
       label: "Model with AI",
