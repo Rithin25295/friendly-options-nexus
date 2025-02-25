@@ -7,13 +7,13 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { PlusCircle, FolderPlus, Database } from "lucide-react";
+import { BrainCircuit, FolderPlus, Database } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const ProjectDropdown = () => {
   const menuItems = [
     {
-      icon: <PlusCircle className="mr-2 h-5 w-5" />,
+      icon: <BrainCircuit className="mr-2 h-5 w-5" />,
       label: "Model with AI",
       onClick: () => console.log("Model with AI clicked"),
     },
