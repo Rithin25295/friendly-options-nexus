@@ -7,7 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { Sparkle, FolderPlus, Check } from "lucide-react";
+import { Sparkle, FolderPlus, Lightbulb } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const ProjectDropdown = () => {
@@ -42,25 +42,19 @@ const ProjectDropdown = () => {
       icon: (
         <div className="relative mr-2">
           <div className="relative w-5 h-5">
-            {/* Base lightbulb shape */}
-            <div className="absolute inset-0">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[14px] h-[14px] border-[1.5px] border-[#7b67d5] rounded-full">
-                <Check className="h-3 w-3 text-[#7b67d5] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-              </div>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[10px] h-[6px] border-[1.5px] border-[#7b67d5] rounded-sm"></div>
-            </div>
-            {/* Dots around the bulb */}
-            {[...Array(12)].map((_, i) => (
+            <Lightbulb className="h-5 w-5 text-[#7b67d5]" />
+            {/* Glow lines */}
+            {[...Array(8)].map((_, i) => (
               <div
                 key={i}
-                className="absolute w-[3px] h-[3px] bg-[#7b67d5] rounded-full"
+                className="absolute w-[2px] h-[2px] bg-[#7b67d5]"
                 style={{
                   top: '50%',
                   left: '50%',
-                  transform: `rotate(${i * 30}deg) translate(12px, -50%)`,
+                  transform: `rotate(${i * 45}deg) translate(10px, -50%)`,
                   transformOrigin: '0 50%',
                 }}
-              ></div>
+              />
             ))}
           </div>
         </div>
