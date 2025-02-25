@@ -7,7 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { Sparkle, FolderPlus, Database } from "lucide-react";
+import { Sparkle, FolderPlus, Lightbulb } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const ProjectDropdown = () => {
@@ -39,7 +39,7 @@ const ProjectDropdown = () => {
       onClick: () => console.log("Add Existing Project clicked"),
     },
     {
-      icon: <Database className="mr-2 h-5 w-5 text-[#7b67d5]" />,
+      icon: <Lightbulb className="mr-2 h-5 w-5 text-[#7b67d5]" />,
       label: "Solutions Hub",
       onClick: () => console.log("Solutions Hub clicked"),
     },
