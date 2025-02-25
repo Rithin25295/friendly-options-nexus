@@ -39,7 +39,40 @@ const ProjectDropdown = () => {
       onClick: () => console.log("Add Existing Project clicked"),
     },
     {
-      icon: <Lightbulb className="mr-2 h-5 w-5 text-[#7b67d5]" />,
+      icon: (
+        <div className="relative mr-2">
+          <div className="relative">
+            <Lightbulb className="h-5 w-5 text-[#7b67d5]" />
+            {/* Hand shape */}
+            <div className="absolute -bottom-1 left-0 w-3 h-2 border-[1.5px] border-[#7b67d5] rounded-full transform -rotate-45"></div>
+            {/* Glow lines */}
+            <div className="absolute -top-1 left-1/2 -translate-x-1/2">
+              <div className="w-[6px] h-[6px] text-[#7b67d5]">
+                <span className="absolute inset-0">
+                  <span className="absolute left-1/2 top-0 h-full w-[1.5px] -translate-x-1/2 bg-current opacity-90"></span>
+                  <span className="absolute left-0 top-1/2 h-[1.5px] w-full -translate-y-1/2 bg-current opacity-90"></span>
+                </span>
+              </div>
+            </div>
+            <div className="absolute -top-0.5 right-0">
+              <div className="w-[4px] h-[4px] text-[#7b67d5]">
+                <span className="absolute inset-0 rotate-45">
+                  <span className="absolute left-1/2 top-0 h-full w-[1.5px] -translate-x-1/2 bg-current"></span>
+                  <span className="absolute left-0 top-1/2 h-[1.5px] w-full -translate-y-1/2 bg-current"></span>
+                </span>
+              </div>
+            </div>
+            <div className="absolute -top-0.5 left-0">
+              <div className="w-[4px] h-[4px] text-[#7b67d5]">
+                <span className="absolute inset-0 -rotate-45">
+                  <span className="absolute left-1/2 top-0 h-full w-[1.5px] -translate-x-1/2 bg-current"></span>
+                  <span className="absolute left-0 top-1/2 h-[1.5px] w-full -translate-y-1/2 bg-current"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
       label: "Solutions Hub",
       onClick: () => console.log("Solutions Hub clicked"),
     },
