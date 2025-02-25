@@ -85,15 +85,15 @@ const ProjectDropdown = () => {
           Create Project
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56 bg-white rounded-lg shadow-lg p-1">
+      <DropdownMenuContent className="w-48 bg-white rounded-lg shadow-lg p-1">
         {menuItems.map((item, index) => (
           <DropdownMenuItem
             key={index}
             onClick={item.onClick}
             className={cn(
-              "flex items-center px-3 py-2.5 text-sm cursor-pointer rounded-md",
-              "hover:bg-[#9b87f5]/10 hover:text-[#9b87f5] transition-colors duration-200",
-              "focus:bg-[#9b87f5]/10 focus:text-[#9b87f5]"
+              "flex items-center px-3 py-2.5 text-sm font-semibold cursor-pointer rounded-md",
+              "hover:bg-[#9b87f5]/20 hover:text-[#9b87f5] transition-colors duration-200",
+              "focus:bg-[#9b87f5]/20 focus:text-[#9b87f5]"
             )}
           >
             {item.icon}
