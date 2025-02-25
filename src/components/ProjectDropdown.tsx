@@ -86,7 +86,7 @@ const ProjectDropdown = () => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          className="bg-transparent hover:bg-[#9b87f5]/20 text-[#7b67d5] font-medium px-3 py-1.5 rounded-lg transition-all duration-200 ease-in-out text-sm"
+          className="bg-[#9b87f5]/20 hover:bg-[#9b87f5]/10 text-[#7b67d5] font-medium px-3 py-1.5 rounded-lg transition-all duration-200 ease-in-out text-sm"
         >
           {selectedOption}
           <ChevronDown className="ml-2 h-4 w-4" />
