@@ -43,15 +43,15 @@ const ProjectDropdown = () => {
         <div className="relative mr-2">
           <div className="relative w-5 h-5">
             <Lightbulb className="h-5 w-5 text-[#7b67d5]" />
-            {/* Glow lines */}
-            {[...Array(8)].map((_, i) => (
+            {/* Glow lines only in top half */}
+            {[...Array(5)].map((_, i) => (
               <div
                 key={i}
                 className="absolute w-[2px] h-[2px] bg-[#7b67d5]"
                 style={{
-                  top: '50%',
+                  top: '25%',
                   left: '50%',
-                  transform: `rotate(${i * 45}deg) translate(10px, -50%)`,
+                  transform: `rotate(${i * 45 - 90}deg) translate(8px, -50%)`,
                   transformOrigin: '0 50%',
                 }}
               />
