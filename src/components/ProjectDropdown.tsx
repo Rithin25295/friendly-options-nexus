@@ -39,7 +39,7 @@ const ProjectDropdown = () => {
       onClick: () => console.log("Add Existing Project clicked"),
     },
     {
-      icon: <Database className="mr-2 h-5 w-5" />,
+      icon: <Database className="mr-2 h-5 w-5 text-[#7b67d5]" />,
       label: "Solutions Hub",
       onClick: () => console.log("Solutions Hub clicked"),
     },
