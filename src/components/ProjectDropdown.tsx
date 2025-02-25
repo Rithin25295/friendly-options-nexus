@@ -18,8 +18,8 @@ const ProjectDropdown = () => {
           <Sparkle className="h-5 w-5 text-[#9b87f5]" />
           <div className="absolute top-0 -right-0 h-[6px] w-[6px] text-[#9b87f5]">
             <span className="absolute inset-0 rotate-0">
-              <span className="absolute left-1/2 top-0 h-full w-[1px] -translate-x-1/2 bg-current"></span>
-              <span className="absolute left-0 top-1/2 h-[1px] w-full -translate-y-1/2 bg-current"></span>
+              <span className="absolute left-1/2 top-0 h-full w-[1.5px] -translate-x-1/2 bg-current opacity-90"></span>
+              <span className="absolute left-0 top-1/2 h-[1.5px] w-full -translate-y-1/2 bg-current opacity-90"></span>
             </span>
           </div>
           <div className="absolute -bottom-0 -left-0 h-[4px] w-[4px] text-[#9b87f5]">
